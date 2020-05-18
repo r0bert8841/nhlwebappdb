@@ -11,8 +11,6 @@ RUN apt-get install -y vim
 
 RUN mkdir /originaldata/
 
-COPY /home/robert/datafiles/hockey_game_data/* /originaldata/
-
-ADD . /
+COPY ./kagglefiles/* /originaldata/
 
 WORKDIR /
